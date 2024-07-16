@@ -79,7 +79,7 @@ class BigramLanguageModel(nn.Module):
   def forward(self,idx, targets=None):
     # idx and targets are both (B,T) tensor of integers
     tok_emb = self.token_embedding_table(idx) # (B, T, C) batch by time by channel tensor
-    logits = self.lm_head(tok_emb)
+    logits = self.lm_head(tok_emb)  # (B, T, vocab_size) -> we say that vocab_size is eq to C
     # interprets as logits which is score for next char in sequence
     # predicting what comes next from tokens in table
     if targets is None:
