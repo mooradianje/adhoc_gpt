@@ -11,7 +11,7 @@ from torch.nn import functional as F
 # Nano GPT: https://github.com/karpathy/nanoGPT
 # openAI model and architectures, GPT3 https://arxiv.org/abs/2005.14165
 # OpenAI blogpost - ChatGPT: optimizing language models for dialogue (fine-tuning) https://openai.com/index/chatgpt/
-# PPO reinforcement learning algorithm
+# PPO reinforcement
 # pytorch docs - understanding implementation of pytorch neural nets
 # "linear projection"
 # nn.Linear -> what is this (dense layer?)
