@@ -95,7 +95,7 @@ class LayerNorm:
 
   def __call__(self, x):
     #calculate the forward pass
-    # don't normalize the columns, normalize the ROWS (for LAYERNORM)
+    # don't normalize the columns, normalize the ROWS (dimension 1) (for LAYERNORM)
     xmean = x.mean(1, keepdim=True) # batch mean
     xvar = x.var(1,keepdim=True) # Batch variance
     
